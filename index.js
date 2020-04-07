@@ -1,15 +1,24 @@
-const numInput = document.getElementById("half-input")
-const numButton = document.getElementById("half-button")
 
-const forInput = document.getElementById("fortune-input")
+const numButton = document.getElementById("half-button");
+
+
 const forButton = document.getElementById("fortune-button")
 
 
+numButton.addEventListener("click", function(){
+    const numInput = document.getElementById("half-input").value;
+    halfNumber(numInput)
+});
+forButton.addEventListener("click", function(){
+    const forInput = document.getElementById("fortune-input").value;
+    fortune(forInput)
+    restyle()
+});
 
 
 function halfNumber(num) {
     alert(num / 2)
-    console.log("Half of " + num + " is" + num / 2)
+    console.log("Half of " + num + " is " + num / 2)
 
 }
 
@@ -35,6 +44,11 @@ function restyle() {
         Math.floor(Math.random() * 255),//G
         Math.floor(Math.random() * 255),//B
     ]
+
+    console.log("restyle!")
+
+    var main = document.getElementsByClassName("main")[0]
+    main.classList.toggle("inverted");
 
     
 }
