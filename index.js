@@ -6,8 +6,10 @@ const forButton = document.getElementById("fortune-button")
 
 
 numButton.addEventListener("click", function(){
+    restyle()
     const numInput = document.getElementById("half-input").value;
     halfNumber(numInput)
+    
 });
 forButton.addEventListener("click", function(){
     const forInput = document.getElementById("fortune-input").value;

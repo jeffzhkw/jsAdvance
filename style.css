@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    transition-duration: 0.5s;
 }
 
 body, html{
@@ -8,16 +9,16 @@ body, html{
 }
 label{
     font-family: sans-serif;
-    font-size: 40pt;
+    font-size: 2vmax;
 
 }
 
 input{
-    font-size: 20pt;
+    font-size: 2vmax;
 }
 
 button{
-    font-size: 20pt;
+    font-size: 2vmax;
 }
 
 .main{
@@ -28,22 +29,24 @@ button{
 }
 
 .calculator{
-    margin: 10px;
+    margin: 2vmax;
     justify-content: center;
 }
 
 .fortune{
-    margin: 10px;
+    margin: 2vmax;
     justify-content: center;
 }
 
 #fortune-output{
     font-family: sans-serif;
-    font-size: 40pt;
-    transition-duration: 0.5s;
+    font-size: 2vmax;
+
 }
 
 .inverted{
     background-color: black;
-    color: white
+    color: white;
+    padding: 30pt;
+
 }
